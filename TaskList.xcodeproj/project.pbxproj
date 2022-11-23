@@ -7,23 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FCB99AB292EB853006A9404 /* Extension + TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCB99AA292EB853006A9404 /* Extension + TableViewCell.swift */; };
 		3FDE5FA5292D59F100CC202D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE5FA4292D59F100CC202D /* AppDelegate.swift */; };
 		3FDE5FA7292D59F100CC202D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE5FA6292D59F100CC202D /* SceneDelegate.swift */; };
-		3FDE5FA9292D59F100CC202D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE5FA8292D59F100CC202D /* ViewController.swift */; };
 		3FDE5FAC292D59F100CC202D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE5FAA292D59F100CC202D /* Main.storyboard */; };
 		3FDE5FAE292D59F200CC202D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE5FAD292D59F200CC202D /* Assets.xcassets */; };
 		3FDE5FB1292D59F200CC202D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FDE5FAF292D59F200CC202D /* LaunchScreen.storyboard */; };
+		3FDE5FBA292D5B5200CC202D /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 3FDE5FB9292D5B5200CC202D /* Realm */; };
+		3FDE5FBC292D5B5200CC202D /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3FDE5FBB292D5B5200CC202D /* RealmSwift */; };
+		3FDE5FC1292D5C0800CC202D /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE5FC0292D5C0800CC202D /* TaskListViewController.swift */; };
+		3FDE5FC3292D5C2600CC202D /* CurrentTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE5FC2292D5C2600CC202D /* CurrentTaskViewController.swift */; };
+		3FDE5FC7292D658400CC202D /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE5FC6292D658400CC202D /* StorageManager.swift */; };
+		3FDE5FC9292E95C300CC202D /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE5FC8292E95C300CC202D /* AlertController.swift */; };
+		3FDE5FCB292E95DC00CC202D /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE5FCA292E95DC00CC202D /* DataManager.swift */; };
+		3FDE5FCD292E968800CC202D /* TaskList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDE5FCC292E968800CC202D /* TaskList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FCB99AA292EB853006A9404 /* Extension + TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + TableViewCell.swift"; sourceTree = "<group>"; };
 		3FDE5FA1292D59F100CC202D /* TaskList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TaskList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FDE5FA4292D59F100CC202D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FDE5FA6292D59F100CC202D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3FDE5FA8292D59F100CC202D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		3FDE5FAB292D59F100CC202D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3FDE5FAD292D59F200CC202D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FDE5FB0292D59F200CC202D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FDE5FB2292D59F200CC202D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FDE5FC0292D5C0800CC202D /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		3FDE5FC2292D5C2600CC202D /* CurrentTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTaskViewController.swift; sourceTree = "<group>"; };
+		3FDE5FC6292D658400CC202D /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		3FDE5FC8292E95C300CC202D /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		3FDE5FCA292E95DC00CC202D /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		3FDE5FCC292E968800CC202D /* TaskList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FDE5FBC292D5B5200CC202D /* RealmSwift in Frameworks */,
+				3FDE5FBA292D5B5200CC202D /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +72,69 @@
 		3FDE5FA3292D59F100CC202D /* TaskList */ = {
 			isa = PBXGroup;
 			children = (
-				3FDE5FA4292D59F100CC202D /* AppDelegate.swift */,
-				3FDE5FA6292D59F100CC202D /* SceneDelegate.swift */,
-				3FDE5FA8292D59F100CC202D /* ViewController.swift */,
-				3FDE5FAA292D59F100CC202D /* Main.storyboard */,
-				3FDE5FAD292D59F200CC202D /* Assets.xcassets */,
-				3FDE5FAF292D59F200CC202D /* LaunchScreen.storyboard */,
-				3FDE5FB2292D59F200CC202D /* Info.plist */,
+				3FDE5FBE292D5B7D00CC202D /* App */,
+				3FDE5FBF292D5B8600CC202D /* Controllers */,
+				3FDE5FCE292E96A100CC202D /* Services */,
+				3FDE5FC5292D656700CC202D /* Models */,
+				3FDE5FBD292D5B6000CC202D /* StoryBoards */,
+				3FDE5FC4292D5DA200CC202D /* Resources */,
 			);
 			path = TaskList;
+			sourceTree = "<group>";
+		};
+		3FDE5FBD292D5B6000CC202D /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				3FDE5FAA292D59F100CC202D /* Main.storyboard */,
+				3FDE5FAF292D59F200CC202D /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		3FDE5FBE292D5B7D00CC202D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3FDE5FA4292D59F100CC202D /* AppDelegate.swift */,
+				3FDE5FA6292D59F100CC202D /* SceneDelegate.swift */,
+				3FDE5FB2292D59F200CC202D /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		3FDE5FBF292D5B8600CC202D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3FDE5FC0292D5C0800CC202D /* TaskListViewController.swift */,
+				3FDE5FC2292D5C2600CC202D /* CurrentTaskViewController.swift */,
+				3FDE5FC8292E95C300CC202D /* AlertController.swift */,
+				3FCB99AA292EB853006A9404 /* Extension + TableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3FDE5FC4292D5DA200CC202D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3FDE5FAD292D59F200CC202D /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3FDE5FC5292D656700CC202D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3FDE5FCC292E968800CC202D /* TaskList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3FDE5FCE292E96A100CC202D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				3FDE5FC6292D658400CC202D /* StorageManager.swift */,
+				3FDE5FCA292E95DC00CC202D /* DataManager.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +153,10 @@
 			dependencies = (
 			);
 			name = TaskList;
+			packageProductDependencies = (
+				3FDE5FB9292D5B5200CC202D /* Realm */,
+				3FDE5FBB292D5B5200CC202D /* RealmSwift */,
+			);
 			productName = TaskList;
 			productReference = 3FDE5FA1292D59F100CC202D /* TaskList.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +185,9 @@
 				Base,
 			);
 			mainGroup = 3FDE5F98292D59F100CC202D;
+			packageReferences = (
+				3FDE5FB8292D5B5200CC202D /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 3FDE5FA2292D59F100CC202D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,9 +215,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FDE5FA9292D59F100CC202D /* ViewController.swift in Sources */,
+				3FDE5FCD292E968800CC202D /* TaskList.swift in Sources */,
 				3FDE5FA5292D59F100CC202D /* AppDelegate.swift in Sources */,
 				3FDE5FA7292D59F100CC202D /* SceneDelegate.swift in Sources */,
+				3FCB99AB292EB853006A9404 /* Extension + TableViewCell.swift in Sources */,
+				3FDE5FC7292D658400CC202D /* StorageManager.swift in Sources */,
+				3FDE5FCB292E95DC00CC202D /* DataManager.swift in Sources */,
+				3FDE5FC1292D5C0800CC202D /* TaskListViewController.swift in Sources */,
+				3FDE5FC9292E95C300CC202D /* AlertController.swift in Sources */,
+				3FDE5FC3292D5C2600CC202D /* CurrentTaskViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +372,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B6U3L4PT52;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskList/Info.plist;
+				INFOPLIST_FILE = TaskList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +385,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = myNameAndI.TaskList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +403,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = B6U3L4PT52;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TaskList/Info.plist;
+				INFOPLIST_FILE = TaskList/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +416,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = myNameAndI.TaskList;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +447,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3FDE5FB8292D5B5200CC202D /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3FDE5FB9292D5B5200CC202D /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FDE5FB8292D5B5200CC202D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		3FDE5FBB292D5B5200CC202D /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FDE5FB8292D5B5200CC202D /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3FDE5F99292D59F100CC202D /* Project object */;
 }

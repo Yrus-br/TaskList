@@ -50,12 +50,6 @@ class StorageManager {
 
     // MARK: - Tasks
     
-    func save(_ taskLists: [Task]) {
-        write {
-            realm.add(taskLists)
-        }
-    }
-    
     func save(_ task: String, completion: (Task) -> Void) {
         write {
             let task = Task(value: [task])
@@ -70,15 +64,16 @@ class StorageManager {
         }
     }
     
-    func edit(_ taskList: Task, newValue: String) {
+    func edit(_ task: Task, newTitle: String, newNote: String) {
         write {
-            taskList.name = newValue
+            task.name = newTitle
+            task.note = newNote
         }
     }
 
     func done(_ task: Task) {
         write {
-            task.setValue(true, forKey: "isComplete")
+            task.isComplete.toggle()
         }
     }
     

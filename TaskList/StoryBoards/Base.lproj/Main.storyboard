@@ -11,21 +11,24 @@
         <scene sceneID="izJ-MW-jsx">
             <objects>
                 <tableViewController id="p3l-wz-h9q" customClass="TaskListViewController" customModule="TaskList" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="nhL-HV-DgH">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="nhL-HV-DgH">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <segmentedControl key="tableHeaderView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="b23-Pq-YMW">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="31"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="32"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
-                                <segment title="First"/>
-                                <segment title="Second"/>
+                                <segment title="A - z"/>
+                                <segment title="date"/>
                             </segments>
+                            <connections>
+                                <action selector="filerSegmentControll:" destination="p3l-wz-h9q" eventType="valueChanged" id="7pB-Bb-9Hv"/>
+                            </connections>
                         </segmentedControl>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskListCell" textLabel="AEk-Qx-pKt" detailTextLabel="jRv-WK-911" style="IBUITableViewCellStyleValue1" id="3TQ-St-mtJ">
-                                <rect key="frame" x="0.0" y="81" width="393" height="43.666667938232422"/>
+                                <rect key="frame" x="0.0" y="87.333332061767578" width="393" height="43.666667938232422"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3TQ-St-mtJ" id="ucG-dB-uO3">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>

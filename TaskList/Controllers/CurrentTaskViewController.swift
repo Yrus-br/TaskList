@@ -70,9 +70,12 @@ class CurrentTaskViewController: UITableViewController {
             isDone(true)
         }
         
-        let doneAction = UIContextualAction(style: .normal, title: "Done") { _, _, isDone in
+        let doneAction = UIContextualAction(
+            style: .normal,
+            title: task.isComplete ? "Undone" : "Done"
+        ) { _, _, isDone in
             StorageManager.shared.done(task)
-            tableView.reloadRows(at: [indexPath], with: .automatic)
+            tableView.reloadData()
             isDone(true)
         }
         
@@ -95,8 +98,10 @@ extension CurrentTaskViewController {
         let alert = UIAlertController.createAlert(withTitle: title, andMessage: "What do you want to do?")
         
         alert.action(with: task) { [weak self] taskTitle, note in
-            if let _ = task, let _ = completion {
-                // TODO - edit task
+            
+            if let task = task, let completion = completion {
+                StorageManager.shared.edit(task, newTitle: taskTitle, newNote: note)
+                completion()
             } else {
                 self?.save(task: taskTitle, withNote: note)
             }

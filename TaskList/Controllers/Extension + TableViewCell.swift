@@ -16,10 +16,10 @@ extension UITableViewCell {
         
         if !currentTasks.isEmpty {
             detailTextLabel?.text = "\(currentTasks.count)"
-            detailTextLabel?.font = UIFont.systemFont(ofSize: 10)
+            detailTextLabel?.font = UIFont.systemFont(ofSize: 15)
         } else if !completedTasks.isEmpty {
             detailTextLabel?.text = "✅"
-            detailTextLabel?.font = UIFont.boldSystemFont(ofSize: 10)
+            detailTextLabel?.font = UIFont.boldSystemFont(ofSize: 15)
         } else {
             detailTextLabel?.text = "0"
         }

@@ -75,7 +75,17 @@ class CurrentTaskViewController: UITableViewController {
             title: task.isComplete ? "Undone" : "Done"
         ) { _, _, isDone in
             StorageManager.shared.done(task)
-            tableView.reloadData()
+            
+            let currentTaskIndex = IndexPath(
+                row: self.currentTasks.index(of: task) ?? 0,
+                section: 0)
+            let completedTaskIndex = IndexPath(
+                row: self.completedTasks.index(of: task) ?? 0,
+                section: 1)
+            
+            let destinationSection = indexPath.section == 0 ? completedTaskIndex : currentTaskIndex
+            tableView.moveRow(at: indexPath, to: destinationSection)
+            
             isDone(true)
         }
         

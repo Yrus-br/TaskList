@@ -31,15 +31,6 @@ class TaskListViewController: UITableViewController {
         tableView.reloadData()
     }
     
-    @IBAction func filerSegmentControll(_ sender: UISegmentedControl) {
-        if sender.selectedSegmentIndex == 0 {
-            taskLists = taskLists.sorted(byKeyPath: "name")
-        } else {
-            taskLists = taskLists.sorted(byKeyPath: "date")
-        }
-        tableView.reloadData()
-    }
-    
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         taskLists.count
@@ -87,6 +78,13 @@ class TaskListViewController: UITableViewController {
         guard let tasksVC = segue.destination as? CurrentTaskViewController  else { return }
         let taskList = taskLists[indexPath.row]
         tasksVC.taskList = taskList
+    }
+    
+    @IBAction func filerSegmentControll(_ sender: UISegmentedControl) {
+        taskLists = sender.selectedSegmentIndex == 0
+        ? taskLists.sorted(byKeyPath: "name") :
+        taskLists.sorted(byKeyPath: "date")
+        tableView.reloadData()
     }
     
     @objc private func addButtonPressed() {

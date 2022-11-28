@@ -10,18 +10,21 @@ import UIKit
 extension UITableViewCell {
     func configure(with tasksList: TaskList) {
         let currentTasks = tasksList.tasks.filter("isComplete = false")
-        let completedTasks = tasksList.tasks.filter("isComplete = true")
+        var content = defaultContentConfiguration()
         
-        textLabel?.text = tasksList.name
+        content.text = tasksList.name
         
-        if !currentTasks.isEmpty {
-            detailTextLabel?.text = "\(currentTasks.count)"
-            detailTextLabel?.font = UIFont.systemFont(ofSize: 15)
-        } else if !completedTasks.isEmpty {
-            detailTextLabel?.text = "✅"
-            detailTextLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+        if tasksList.tasks.isEmpty {
+            content.secondaryText = "0"
+            accessoryType = .none
+        } else if currentTasks.isEmpty {
+            content.secondaryText = nil
+            accessoryType = .checkmark
         } else {
-            detailTextLabel?.text = "0"
+            content.secondaryText = currentTasks.count.formatted()
+            accessoryType = .none
         }
+        
+        contentConfiguration = content
     }
 }
